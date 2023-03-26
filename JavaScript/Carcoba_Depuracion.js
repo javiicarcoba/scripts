@@ -1,5 +1,5 @@
 function greeting(){
-        return "Hola, mundo";
+        return "Hola, mun2";
     }
     var word = greeting();
     console.log(word);
