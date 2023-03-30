@@ -13,6 +13,8 @@ def romanToInt(s: str) -> int:
     for i in range(len(s)):
         if s[i] == 'V' and s[i-1] == 'I' and i>0:
             suma += 3
+        elif s[i] == 'X' and s[i-1] == 'I' and i>0:
+            suma += 8
         elif s[i] == 'L' and s[i-1] == 'X' and i>0:
             suma += 30
         elif s[i] == 'C' and s[i-1] == 'X' and i>0:
@@ -26,7 +28,7 @@ def romanToInt(s: str) -> int:
 
     return suma
 
-pruebas = ["III","LVIII","MCMXCIV"]
+pruebas = ["III","LVIII","MCMXCIV", "XIX"]
 
 for cad in pruebas:
     print(romanToInt(cad))
