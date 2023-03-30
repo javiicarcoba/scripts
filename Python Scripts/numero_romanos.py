@@ -1,3 +1,4 @@
+#Función que lee un numero romano y lo convierte en un entero.
 def romanToInt(s: str) -> int:
     suma = 0
     letras = {
